@@ -12,6 +12,10 @@
 		41078B93274DB4D2003BD4FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41078B91274DB4D2003BD4FA /* Main.storyboard */; };
 		41078B95274DB4D4003BD4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41078B94274DB4D4003BD4FA /* Assets.xcassets */; };
 		41078B98274DB4D4003BD4FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41078B96274DB4D4003BD4FA /* LaunchScreen.storyboard */; };
+		AFD5584129A416CC006DC4C0 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5584029A416CC006DC4C0 /* Coin.swift */; };
+		AFD5584329A416DB006DC4C0 /* CoinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5584229A416DB006DC4C0 /* CoinTableViewController.swift */; };
+		AFD5584729A41B1D006DC4C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5584629A41B1D006DC4C0 /* Constants.swift */; };
+		AFD5584929A41B2F006DC4C0 /* CoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5584829A41B2F006DC4C0 /* CoinController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		41078B94274DB4D4003BD4FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41078B97274DB4D4003BD4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41078B99274DB4D4003BD4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD5584029A416CC006DC4C0 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		AFD5584229A416DB006DC4C0 /* CoinTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewController.swift; sourceTree = "<group>"; };
+		AFD5584629A41B1D006DC4C0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AFD5584829A41B2F006DC4C0 /* CoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,10 @@
 		41078B8A274DB4D2003BD4FA /* CoinBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				41078B9F274DB4E0003BD4FA /* Storyboards */,
 				41078BA0274DB4EE003BD4FA /* Supporting Files */,
+				41078B9F274DB4E0003BD4FA /* Storyboards */,
+				AFD5584429A4173C006DC4C0 /* Model */,
+				AFD5584529A41743006DC4C0 /* Controllers */,
 			);
 			path = CoinBrowser;
 			sourceTree = "<group>";
@@ -72,12 +82,30 @@
 		41078BA0274DB4EE003BD4FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AFD5584629A41B1D006DC4C0 /* Constants.swift */,
 				41078B8B274DB4D2003BD4FA /* AppDelegate.swift */,
 				41078B8D274DB4D2003BD4FA /* SceneDelegate.swift */,
 				41078B94274DB4D4003BD4FA /* Assets.xcassets */,
 				41078B99274DB4D4003BD4FA /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFD5584429A4173C006DC4C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFD5584029A416CC006DC4C0 /* Coin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFD5584529A41743006DC4C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFD5584229A416DB006DC4C0 /* CoinTableViewController.swift */,
+				AFD5584829A41B2F006DC4C0 /* CoinController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD5584929A41B2F006DC4C0 /* CoinController.swift in Sources */,
+				AFD5584729A41B1D006DC4C0 /* Constants.swift in Sources */,
+				AFD5584329A416DB006DC4C0 /* CoinTableViewController.swift in Sources */,
+				AFD5584129A416CC006DC4C0 /* Coin.swift in Sources */,
 				41078B8C274DB4D2003BD4FA /* AppDelegate.swift in Sources */,
 				41078B8E274DB4D2003BD4FA /* SceneDelegate.swift in Sources */,
 			);
